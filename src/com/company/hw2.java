@@ -8,12 +8,12 @@ public class hw2 {
         Scanner scanner = new Scanner (System.in);
         LinkedList<String> list = new LinkedList<> ();
 
-        for (String input = scanner.next(); !input.equalsIgnoreCase ("!"); input = scanner.next())
+        for (String input = scanner.next(); !input.equals ("!"); input = scanner.next())
             list.add (input);
 
         System.out.println (list);
 
-        for (String input = scanner.next(); !input.equalsIgnoreCase ("!"); input = scanner.next()) {
+        for (String input = scanner.next(); !input.equals ("!"); input = scanner.next()) {
             for (String s : list)
                 if (s.equals(input)) {
                     System.out.println ("hit");
